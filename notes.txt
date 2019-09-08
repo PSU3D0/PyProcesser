@@ -1,0 +1,24 @@
+AUTO TONE from the manual:
+The Auto option for Levels and Curves and the Auto Tone command automatically adjust the black point and white point in an image.
+ This clips a portion of the shadows and highlights in each channel and maps the lightest and darkest pixels in each color channel to pure white and pure black.
+ The intermediate pixel values are redistributed proportionately.
+ As a result, using the Auto option or Auto Tone increases the contrast in an image because the pixel values are expanded.
+ Because the Auto option and Auto Tone adjust each color channel individually, it may remove color or introduce color casts.
+
+
+AUTO CONTRAST from the manual:
+The Auto Contrast command adjusts image contrast automatically.
+ Because Auto Contrast does not adjust channels individually, it does not introduce or remove color casts.
+ It clips the shadow and highlight values in an image and then maps the remaining lightest and darkest pixels in the image to pure white and pure black .
+ This makes the highlights appear lighter and shadows appear darker.
+
+
+AUTO COLOR from the manual:
+Auto Color adjusts the contrast and color of an image by searching the image to identify shadows, midtones, and highlights.
+ By default, Auto Color neutralizes the midtones using a target color of RGB 128 gray and clips the shadowand highlight pixels by 0.5%.
+ You can change these defaults in the Auto Color Correction Options dialog box.
+
+LIGHTROOM AUTOTONE
+
+-Maximize Tonal Scale
+-Minimize Highlights & Shadow Clipping

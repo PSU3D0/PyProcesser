@@ -167,23 +167,5 @@ class ImageProcessor():
         pass
         
 
-            
-
-def Main():
-    start = time.time()
-    srcDir = '/home/frankie/Pictures/initTestDir'
-    dstDir = '/home/frankie/Pictures/copyTestDir'
-    dstList = [[dstDir,True,False,'original']]
-    
-
-
-    process = ImageProcessor(srcDir,dstList)
-    process.singleProcess()
-    print(time.time()-start)
-    print("Averaged {} seconds per photo".format((time.time()-start)/51))
-
-Main()
-
-
 
 
