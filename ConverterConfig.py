@@ -18,13 +18,13 @@ class Ui_configScreen(object):
         self.nameDisplay.setGeometry(QtCore.QRect(0, 60, 81, 31))
         self.nameDisplay.setObjectName("nameDisplay")
         self.label_2 = QtWidgets.QLabel(configScreen)
-        self.label_2.setGeometry(QtCore.QRect(600, 50, 191, 21))
+        self.label_2.setGeometry(QtCore.QRect(640, 50, 191, 21))
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.destinationTable = QtWidgets.QTableWidget(configScreen)
         self.destinationTable.setGeometry(QtCore.QRect(580, 70, 301, 301))
         self.destinationTable.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
-        self.destinationTable.setColumnCount(4)
+        self.destinationTable.setColumnCount(0)
         self.destinationTable.setObjectName("destinationTable")
         self.destinationTable.setRowCount(0)
         self.destinationTable.horizontalHeader().setCascadingSectionResizes(True)
@@ -113,7 +113,7 @@ class Ui_configScreen(object):
 
     def retranslateUi(self, configScreen):
         _translate = QtCore.QCoreApplication.translate
-        configScreen.setWindowTitle(_translate("configScreen", "Dialog"))
+        configScreen.setWindowTitle(_translate("configScreen", "Card Converter Config"))
         self.nameDisplay.setText(_translate("configScreen", "Event Name"))
         self.label_2.setText(_translate("configScreen", "Destinations"))
         self.saveSettingsButton.setText(_translate("configScreen", "Save"))

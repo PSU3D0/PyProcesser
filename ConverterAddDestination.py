@@ -27,9 +27,10 @@ class Ui_addDestination(object):
         self.selectPath.setGeometry(QtCore.QRect(320, 50, 71, 31))
         self.selectPath.setObjectName("selectPath")
         self.enableHistogramFix = QtWidgets.QCheckBox(addDestination)
+        self.enableHistogramFix.setEnabled(False)
         self.enableHistogramFix.setGeometry(QtCore.QRect(0, 150, 171, 23))
         self.enableHistogramFix.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.enableHistogramFix.setChecked(True)
+        self.enableHistogramFix.setChecked(False)
         self.enableHistogramFix.setObjectName("enableHistogramFix")
         self.enableWatermark = QtWidgets.QCheckBox(addDestination)
         self.enableWatermark.setGeometry(QtCore.QRect(10, 180, 161, 23))
@@ -53,6 +54,11 @@ class Ui_addDestination(object):
         self.destinationPathDisplay.setTextFormat(QtCore.Qt.PlainText)
         self.destinationPathDisplay.setWordWrap(True)
         self.destinationPathDisplay.setObjectName("destinationPathDisplay")
+        self.renamePhoto = QtWidgets.QCheckBox(addDestination)
+        self.renamePhoto.setGeometry(QtCore.QRect(10, 210, 161, 23))
+        self.renamePhoto.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.renamePhoto.setChecked(True)
+        self.renamePhoto.setObjectName("renamePhoto")
 
         self.retranslateUi(addDestination)
         self.saveCancelSelection.accepted.connect(addDestination.accept)
@@ -61,14 +67,15 @@ class Ui_addDestination(object):
 
     def retranslateUi(self, addDestination):
         _translate = QtCore.QCoreApplication.translate
-        addDestination.setWindowTitle(_translate("addDestination", "Dialog"))
+        addDestination.setWindowTitle(_translate("addDestination", "Add Destination"))
         self.label.setText(_translate("addDestination", "Add new destination"))
         self.selectPath.setText(_translate("addDestination", "Select"))
-        self.enableHistogramFix.setText(_translate("addDestination", "Normalize Histogram"))
+        self.enableHistogramFix.setText(_translate("addDestination", "AutoTone"))
         self.enableWatermark.setText(_translate("addDestination", "Add Watermark"))
         self.downScaleSelection.setItemText(0, _translate("addDestination", "Original"))
         self.downScaleSelection.setItemText(1, _translate("addDestination", "600x400"))
         self.label_2.setText(_translate("addDestination", "Downscaling"))
+        self.renamePhoto.setText(_translate("addDestination", "Rename Photos"))
 
 
 if __name__ == "__main__":
